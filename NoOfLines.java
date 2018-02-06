@@ -9,6 +9,7 @@ public class Sieves {
     
    
     public static void main(String a[]){
+       
        Scanner scan= new Scanner(System.in);
        String str= scan.nextLine();
        str=str.trim();
@@ -19,23 +20,29 @@ public class Sieves {
        {
            
            
-           if(Character.isUpperCase(ch[i]))
+           if(ch[i]=='.')
            {
                
-                count++;
-              
+               count++;
                   
                 
                
                
            }
+           else if(i==n-1)
+               {
+                   if(ch[i]!='.')
+                   {
+                    count++;
+                    
+                   }
+                  
+               }
        
           
        }
        
          System.out.print(count);
-        
- 
     }
 }
 

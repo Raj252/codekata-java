@@ -16,13 +16,13 @@ public class Sieves {
        n*=m;
        if(n%2==0)
        {
-          System.out.println("YES");
+          System.out.println("EVEN");
     
        }
        else
        {
         
-         System.out.println("NO");
+         System.out.println("ODD");
     }
        }
        

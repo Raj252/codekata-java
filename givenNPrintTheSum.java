@@ -1,32 +1,29 @@
-package sieves;
+package special;
 import java.util.*;
 /**
  *
  * @author akil
  */
-public class Sieves {
+public class Special {
 
-    
-   
-    public static void main(String a[]){
-       
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
        Scanner scan= new Scanner(System.in);
-       int n=scan.nextInt();
-       
-       int sum=0;
-       int i=0,r=n%10;
-       while(r!=0)
+       String str=scan.next();
+       int len= str.length();
+       int n,sum=0;
+       char[] ch=str.toCharArray();
+       for(int i=0;i<len;i++)
        {
-       r=n%10;
-       n=n/10;
-       
-       sum+=r;
-       i++;
-       
-       
+          
+           String st=Character.toString(ch[i]);
+           n=Integer.parseInt(st);
+           sum+=n;
        }
-       System.out.print(sum);
-       
-       
-    }
+        System.out.println(sum);
+        
+}
 }

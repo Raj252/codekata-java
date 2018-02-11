@@ -12,14 +12,14 @@ public class Special {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner scan=new Scanner(System.in);
-        int a= scan.nextInt();
-        int b=scan.nextInt();
-        int temp=0;
-        temp=a;
-        a=b;
-        b=temp;
-        System.out.println(a);
-        System.out.println(b);
+        int c= scan.nextInt();
+        int d=scan.nextInt();
+        int tep=0;
+        tep=c;
+        c=d;
+        d=tep;
+        System.out.println(c);
+        System.out.println(d);
     }
     
 }

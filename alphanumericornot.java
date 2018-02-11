@@ -13,7 +13,7 @@ public class Special {
         // TODO code application logic here
        Scanner scan= new Scanner(System.in);
        String str=scan.next();
-      String str1=str.replaceAll("[a-zA-Z]","@");
+      String str1=str.replaceAll("[a-zA-Z]","/");
       // System.out.println(str1);
        str1=str1.replaceAll("[1-9]","*");
        //boolean j=str.matches("{0-9}");
@@ -22,7 +22,7 @@ public class Special {
        int count=0,cnt=0;
            for(int i=0;i<str1.length();i++)
            {
-               if(ch[i]=='@')
+               if(ch[i]=='/')
                {
                    count++;
                }
